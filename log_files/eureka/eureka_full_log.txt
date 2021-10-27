@@ -1,0 +1,267 @@
+
+Thu, 09/16/21, 03:29:26 PM: 
+----------------------------------------------------------------------------------------------------------------------
+START OF PROGRAM RUN
+
+Thu, 09/16/21, 03:29:26 PM: 
+    Validating user authentification...
+
+Thu, 09/16/21, 03:29:26 PM:  Complete! 
+
+Thu, 09/16/21, 03:29:26 PM:  
+    PROGRAM START
+    -------------
+    Config used: 
+        - config file name  : ./configs/eureka/eureka_full.txt
+        - repo              : Netflix/eureka
+        - auth file         : auths/fabio_auth.txt
+        - rows              : all
+        - issue state       : closed        
+        - pr state          : closed          
+        - diagnostics       : false          
+        - log file          : log_files/eureka/eureka_full_log.txt        
+        - issue json file   : outputs/eureka_full/json/eureka_full_issue_list.json
+        - pr JSON file      : outputs/eureka_full/json/eureka_full_pr_list.json
+        - commit JSON file  : outputs/eureka_full/json/eureka_full_commit_list.json
+        - master JSON file  : outputs/eureka_full/json/eureka_full_master_list.json
+        - "pr" CSV file     : outputs/eureka_full/eureka_full_pr_output.csv       
+        - "commit" CSV file : outputs/eureka_full/eureka_full_commit_output.csv
+        - "pr" separator    : \a
+        - "commit" separator: ,
+
+
+Thu, 09/16/21, 03:29:36 PM: 
+ Attempting program start... 
+
+Thu, 09/16/21, 03:29:36 PM: 
+    Getting paginated list of issues...
+
+Thu, 09/16/21, 03:29:36 PM:  Complete! 
+
+Thu, 09/16/21, 03:29:36 PM: 
+    Getting paginated list of pull requests...
+
+Thu, 09/16/21, 03:29:36 PM:  Complete! 
+
+Thu, 09/16/21, 03:29:36 PM: 
+    Validating row quantity config for issue data collection...
+
+Thu, 09/16/21, 03:29:37 PM:  Complete! 
+
+Thu, 09/16/21, 03:29:37 PM: 
+    Getting issue data...
+
+Thu, 09/16/21, 03:42:06 PM:  Complete! 
+
+Thu, 09/16/21, 03:42:06 PM: 
+    Writing list of issue data to JSON...
+
+Thu, 09/16/21, 03:42:06 PM:  Complete! 
+
+Thu, 09/16/21, 03:42:06 PM: 
+    Validating row quantity config for pull request data collection...
+
+Thu, 09/16/21, 03:42:06 PM:  Complete! 
+
+Thu, 09/16/21, 03:42:06 PM: 
+    Getting pull request data...
+
+Thu, 09/16/21, 03:47:29 PM: 
+    Rate Limit imposed. Sleeping...
+Traceback (most recent call last):
+  File "extractor.py", line 1311, in get_PR_info
+    pr_author_name  = cur_pr_user.name
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/NamedUser.py", line 276, in name
+    self._completeIfNotSet(self._name)
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/GithubObject.py", line 294, in _completeIfNotSet
+    self._completeIfNeeded()
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/GithubObject.py", line 298, in _completeIfNeeded
+    self.__complete()
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/GithubObject.py", line 305, in __complete
+    headers, data = self._requester.requestJsonAndCheck("GET", self._url.value)
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/Requester.py", line 315, in requestJsonAndCheck
+    return self.__check(
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/Requester.py", line 340, in __check
+    raise self.__createException(status, responseHeaders, output)
+github.GithubException.RateLimitExceededException: 403 {"message": "API rate limit exceeded for user ID 34105280.", "documentation_url": "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+Thu, 09/16/21, 04:59:25 PM: 
+    Getting more pull request data...
+
+Thu, 09/16/21, 05:02:20 PM:  Complete! 
+
+Thu, 09/16/21, 05:02:20 PM: 
+    Writing list of PR data to JSON...
+
+Thu, 09/16/21, 05:02:20 PM:  Complete! 
+
+Thu, 09/16/21, 05:02:20 PM: 
+[Diagnostics]:
+
+    Non-merged pull requests:
+        3
+        15
+        25
+        26
+        28
+        54
+        79
+        84
+        96
+        115
+        119
+        124
+        134
+        149
+        185
+        187
+        198
+        220
+        349
+        385
+        505
+        524
+        529
+        541
+        561
+        609
+        617
+        618
+        644
+        646
+        656
+        659
+        712
+        758
+        767
+        781
+        837
+        889
+        891
+        900
+        928
+        935
+        965
+        986
+        996
+        1020
+        1030
+        1077
+        1092
+        1101
+        1114
+        1147
+        1151
+        1156
+        1175
+        1191
+        1198
+        1210
+        1243
+        1249
+        1258
+        1292
+        1297
+        1298
+        1312
+        1319
+        1325
+        1330
+        1332
+        1339
+        1340
+        1355
+        1388
+        1390
+        1394
+        1395
+        1403
+        1404
+        1406
+        1409
+        1411
+        1413
+        1415
+
+Thu, 09/16/21, 05:02:20 PM: 
+    filtering commits...
+
+Thu, 09/16/21, 06:36:13 PM:  Complete! 
+
+Thu, 09/16/21, 06:36:13 PM: 
+    Getting commit data...
+
+Thu, 09/16/21, 06:36:13 PM:  Complete! 
+
+Thu, 09/16/21, 06:36:13 PM: 
+    Writing list of commit data to JSON...
+
+Thu, 09/16/21, 06:36:13 PM:  Complete! 
+
+Thu, 09/16/21, 06:36:13 PM: 
+[Diagnostics]:
+
+    Pull requsts with no commits:
+
+    Commits with no changed files:
+        253
+        302
+        437
+        517
+        569
+        584
+        586
+        589
+        615
+        670
+        689
+        793
+        813
+        1381
+
+Thu, 09/16/21, 06:36:13 PM: 
+    Reading issue data JSON...
+
+Thu, 09/16/21, 06:36:13 PM:  Complete! 
+
+Thu, 09/16/21, 06:36:13 PM: 
+    Reading pull request data JSON...
+
+Thu, 09/16/21, 06:36:13 PM:  Complete! 
+
+Thu, 09/16/21, 06:36:13 PM: 
+    Reading commit data JSON...
+
+Thu, 09/16/21, 06:36:13 PM:  Complete! 
+
+Thu, 09/16/21, 06:36:13 PM: 
+    collating lists...
+
+Thu, 09/16/21, 06:36:13 PM:  Complete! 
+
+Thu, 09/16/21, 06:36:13 PM: 
+    Writing master list of data to JSON...
+
+Thu, 09/16/21, 06:36:13 PM:  Complete! 
+
+Thu, 09/16/21, 06:36:13 PM: 
+    Reading collated data JSON...
+
+Thu, 09/16/21, 06:36:13 PM:  Complete! 
+
+Thu, 09/16/21, 06:36:13 PM: 
+    Writing "PR" type CSV...
+
+Thu, 09/16/21, 06:36:13 PM:  Complete! 
+
+Thu, 09/16/21, 06:36:13 PM: 
+    Writing "commit" type CSV...
+
+Thu, 09/16/21, 06:36:14 PM:  Complete! 
+
+Thu, 09/16/21, 06:36:14 PM:  Success! 
+
+Thu, 09/16/21, 06:36:14 PM: 
+END OF PROGRAM RUN
+----------------------------------------------------------------------------------------------------------------------
+

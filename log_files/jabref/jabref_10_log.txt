@@ -1,0 +1,404 @@
+
+Thu, 09/16/21, 11:54:43 AM: 
+----------------------------------------------------------------------------------------------------------------------
+START OF PROGRAM RUN
+
+Thu, 09/16/21, 11:54:43 AM: 
+    Validating user authentification...
+
+Thu, 09/16/21, 11:54:43 AM: 
+    Non-fatal: 
+        Authorization file not found! 
+        Continuing without authentification...
+
+Thu, 09/16/21, 11:54:43 AM:  Complete! 
+
+Thu, 09/16/21, 11:54:43 AM:  
+    PROGRAM START
+    -------------
+    Config used: 
+        - config file name  : ./configs/jabref/jabref_10.txt
+        - repo              : JabRef/jabref
+        - auth file         : auths/jmp_auth.txt
+        - rows              : 10
+        - issue state       : closed        
+        - pr state          : closed          
+        - diagnostics       : false          
+        - log file          : log_files/jabref/jabref_10_log.txt        
+        - issue json file   : outputs/jabref_10/json/jabref_10_issue_list.json
+        - pr JSON file      : outputs/jabref_10/json/jabref_10_pr_list.json
+        - commit JSON file  : outputs/jabref_10/json/jabref_10_commit_list.json
+        - master JSON file  : outputs/jabref_10/json/jabref_10_master_list.json
+        - "pr" CSV file     : outputs/jabref_10/jabref_10_pr_output.csv       
+        - "commit" CSV file : outputs/jabref_10/jabref_10_commit_output.csv
+        - "pr" separator    : 
+        - "commit" separator: ,
+
+
+Thu, 09/16/21, 11:54:47 AM: 
+ Attempting program start... 
+
+Thu, 09/16/21, 11:54:48 AM: 
+    Getting paginated list of issues...
+
+Thu, 09/16/21, 11:54:48 AM:  Complete! 
+
+Thu, 09/16/21, 11:54:48 AM: 
+    Getting paginated list of pull requests...
+
+Thu, 09/16/21, 11:54:48 AM:  Complete! 
+
+Thu, 09/16/21, 11:54:48 AM: 
+    Validating row quantity config for issue data collection...
+
+Thu, 09/16/21, 11:54:48 AM:  Complete! 
+
+Thu, 09/16/21, 11:54:48 AM: 
+    Getting issue data...
+
+Thu, 09/16/21, 11:54:52 AM:  Complete! 
+
+Thu, 09/16/21, 11:54:52 AM: 
+    Writing list of issue data to JSON...
+
+Thu, 09/16/21, 11:54:52 AM:  Complete! 
+
+Thu, 09/16/21, 11:54:52 AM: 
+    Validating row quantity config for pull request data collection...
+
+Thu, 09/16/21, 11:54:54 AM:  Complete! 
+
+Thu, 09/16/21, 11:54:54 AM: 
+    Getting pull request data...
+
+Thu, 09/16/21, 11:55:03 AM:  Complete! 
+
+Thu, 09/16/21, 11:55:03 AM: 
+    Writing list of PR data to JSON...
+
+Thu, 09/16/21, 11:55:03 AM:  Complete! 
+
+Thu, 09/16/21, 11:55:03 AM: 
+[Diagnostics]:
+
+    Non-merged pull requests:
+
+Thu, 09/16/21, 11:55:03 AM: 
+    filtering commits...
+
+Thu, 09/16/21, 11:55:06 AM: 
+    Rate Limit imposed. Sleeping...
+Traceback (most recent call last):
+  File "extractor.py", line 597, in filter_commits
+    num_of_commits = cur_commit_paged_list.totalCount
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/PaginatedList.py", line 149, in totalCount
+    headers, data = self.__requester.requestJsonAndCheck(
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/Requester.py", line 315, in requestJsonAndCheck
+    return self.__check(
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/Requester.py", line 340, in __check
+    raise self.__createException(status, responseHeaders, output)
+github.GithubException.RateLimitExceededException: 403 {"message": "API rate limit exceeded for 47.212.193.65. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)", "documentation_url": "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+Thu, 09/16/21, 12:54:57 PM: 
+    filtering commits...
+
+Thu, 09/16/21, 12:55:02 PM:  Complete! 
+
+Thu, 09/16/21, 12:55:02 PM: 
+    Getting commit data...
+
+Thu, 09/16/21, 12:55:02 PM:  Complete! 
+
+Thu, 09/16/21, 12:55:02 PM: 
+    Writing list of commit data to JSON...
+
+Thu, 09/16/21, 12:55:02 PM:  Complete! 
+
+Thu, 09/16/21, 12:55:02 PM: 
+[Diagnostics]:
+
+    Pull requsts with no commits:
+
+    Commits with no changed files:
+
+Thu, 09/16/21, 12:55:02 PM: 
+    Reading issue data JSON...
+
+Thu, 09/16/21, 12:55:02 PM:  Complete! 
+
+Thu, 09/16/21, 12:55:02 PM: 
+    Reading pull request data JSON...
+
+Thu, 09/16/21, 12:55:02 PM:  Complete! 
+
+Thu, 09/16/21, 12:55:02 PM: 
+    Reading commit data JSON...
+
+Thu, 09/16/21, 12:55:02 PM:  Complete! 
+
+Thu, 09/16/21, 12:55:02 PM: 
+    collating lists...
+
+Thu, 09/16/21, 12:55:02 PM:  Complete! 
+
+Thu, 09/16/21, 12:55:02 PM: 
+    Writing master list of data to JSON...
+
+Thu, 09/16/21, 12:55:02 PM:  Complete! 
+
+Thu, 09/16/21, 12:55:02 PM: 
+    Reading collated data JSON...
+
+Thu, 09/16/21, 12:55:02 PM:  Complete! 
+
+Thu, 09/16/21, 12:55:02 PM: 
+    Writing "PR" type CSV...
+
+Thu, 09/16/21, 12:55:02 PM: 
+    Unspecified exception:
+
+Traceback (most recent call last):
+  File "extractor.py", line 160, in main
+    exe_menu( cfg_list, session, logger )
+  File "extractor.py", line 506, in exe_menu
+    write_csv( master_info_list, pr_csv_filename,
+  File "extractor.py", line 1950, in write_csv
+    writer = csv.writer( csvfile, quoting=csv.QUOTE_MINIMAL,
+TypeError: "delimiter" must be a 1-character string
+
+Thu, 09/16/21, 12:55:02 PM: 
+END OF PROGRAM RUN
+----------------------------------------------------------------------------------------------------------------------
+
+
+Thu, 09/16/21, 01:44:22 PM: 
+----------------------------------------------------------------------------------------------------------------------
+START OF PROGRAM RUN
+
+Thu, 09/16/21, 01:44:22 PM: 
+    Validating user authentification...
+
+Thu, 09/16/21, 01:44:22 PM:  Complete! 
+
+Thu, 09/16/21, 01:44:22 PM:  
+    PROGRAM START
+    -------------
+    Config used: 
+        - config file name  : ./configs/jabref/jabref_10.txt
+        - repo              : JabRef/jabref
+        - auth file         : auths/fabio_auth.txt
+        - rows              : 10
+        - issue state       : closed        
+        - pr state          : closed          
+        - diagnostics       : false          
+        - log file          : log_files/jabref/jabref_10_log.txt        
+        - issue json file   : outputs/jabref_10/json/jabref_10_issue_list.json
+        - pr JSON file      : outputs/jabref_10/json/jabref_10_pr_list.json
+        - commit JSON file  : outputs/jabref_10/json/jabref_10_commit_list.json
+        - master JSON file  : outputs/jabref_10/json/jabref_10_master_list.json
+        - "pr" CSV file     : outputs/jabref_10/jabref_10_pr_output.csv       
+        - "commit" CSV file : outputs/jabref_10/jabref_10_commit_output.csv
+        - "pr" separator    : 
+        - "commit" separator: ,
+
+
+Thu, 09/16/21, 01:44:40 PM: 
+ Attempting program start... 
+
+Thu, 09/16/21, 01:44:45 PM: 
+    Reading collated data JSON...
+
+Thu, 09/16/21, 01:44:45 PM:  Complete! 
+
+Thu, 09/16/21, 01:44:45 PM: 
+    Writing "PR" type CSV...
+
+Thu, 09/16/21, 01:44:45 PM: 
+    Unspecified exception:
+
+Traceback (most recent call last):
+  File "extractor.py", line 160, in main
+    exe_menu( cfg_list, session, logger )
+  File "extractor.py", line 506, in exe_menu
+    write_csv( master_info_list, pr_csv_filename,
+  File "extractor.py", line 1950, in write_csv
+    writer = csv.writer( csvfile, quoting=csv.QUOTE_MINIMAL,
+TypeError: "delimiter" must be a 1-character string
+
+Thu, 09/16/21, 01:44:45 PM: 
+END OF PROGRAM RUN
+----------------------------------------------------------------------------------------------------------------------
+
+
+Thu, 09/16/21, 01:46:24 PM: 
+----------------------------------------------------------------------------------------------------------------------
+START OF PROGRAM RUN
+
+Thu, 09/16/21, 01:46:24 PM: 
+    Validating user authentification...
+
+Thu, 09/16/21, 01:46:25 PM:  Complete! 
+
+Thu, 09/16/21, 01:46:25 PM:  
+    PROGRAM START
+    -------------
+    Config used: 
+        - config file name  : ./configs/jabref/jabref_10.txt
+        - repo              : JabRef/jabref
+        - auth file         : auths/fabio_auth.txt
+        - rows              : 10
+        - issue state       : closed        
+        - pr state          : closed          
+        - diagnostics       : false          
+        - log file          : log_files/jabref/jabref_10_log.txt        
+        - issue json file   : outputs/jabref_10/json/jabref_10_issue_list.json
+        - pr JSON file      : outputs/jabref_10/json/jabref_10_pr_list.json
+        - commit JSON file  : outputs/jabref_10/json/jabref_10_commit_list.json
+        - master JSON file  : outputs/jabref_10/json/jabref_10_master_list.json
+        - "pr" CSV file     : outputs/jabref_10/jabref_10_pr_output.csv       
+        - "commit" CSV file : outputs/jabref_10/jabref_10_commit_output.csv
+        - "pr" separator    : ,
+        - "commit" separator: ,
+
+
+Thu, 09/16/21, 01:46:28 PM: 
+ Attempting program start... 
+
+Thu, 09/16/21, 01:46:30 PM: 
+    Reading collated data JSON...
+
+Thu, 09/16/21, 01:46:30 PM:  Complete! 
+
+Thu, 09/16/21, 01:46:30 PM: 
+    Writing "PR" type CSV...
+
+Thu, 09/16/21, 01:46:30 PM:  Complete! 
+
+Thu, 09/16/21, 01:46:30 PM: 
+    Writing "commit" type CSV...
+
+Thu, 09/16/21, 01:46:30 PM:  Complete! 
+
+Thu, 09/16/21, 01:46:30 PM:  Success! 
+
+Thu, 09/16/21, 01:46:30 PM: 
+END OF PROGRAM RUN
+----------------------------------------------------------------------------------------------------------------------
+
+
+Thu, 09/16/21, 01:49:30 PM: 
+----------------------------------------------------------------------------------------------------------------------
+START OF PROGRAM RUN
+
+Thu, 09/16/21, 01:49:30 PM: 
+    Validating user authentification...
+
+Thu, 09/16/21, 01:49:31 PM:  Complete! 
+
+Thu, 09/16/21, 01:49:31 PM:  
+    PROGRAM START
+    -------------
+    Config used: 
+        - config file name  : ./configs/jabref/jabref_10.txt
+        - repo              : JabRef/jabref
+        - auth file         : auths/fabio_auth.txt
+        - rows              : 10
+        - issue state       : closed        
+        - pr state          : closed          
+        - diagnostics       : false          
+        - log file          : log_files/jabref/jabref_10_log.txt        
+        - issue json file   : outputs/jabref_10/json/jabref_10_issue_list.json
+        - pr JSON file      : outputs/jabref_10/json/jabref_10_pr_list.json
+        - commit JSON file  : outputs/jabref_10/json/jabref_10_commit_list.json
+        - master JSON file  : outputs/jabref_10/json/jabref_10_master_list.json
+        - "pr" CSV file     : outputs/jabref_10/jabref_10_pr_output.csv       
+        - "commit" CSV file : outputs/jabref_10/jabref_10_commit_output.csv
+        - "pr" separator    : ,
+        - "commit" separator: ,
+
+
+Thu, 09/16/21, 01:49:39 PM: 
+ Attempting program start... 
+
+Thu, 09/16/21, 01:49:40 PM: 
+    Getting paginated list of issues...
+
+Thu, 09/16/21, 01:49:40 PM:  Complete! 
+
+Thu, 09/16/21, 01:49:40 PM: 
+    Validating row quantity config for issue data collection...
+
+Thu, 09/16/21, 01:49:40 PM:  Complete! 
+
+Thu, 09/16/21, 01:49:40 PM: 
+    Getting issue data...
+
+Thu, 09/16/21, 01:49:43 PM:  Complete! 
+
+Thu, 09/16/21, 01:49:43 PM: 
+    Writing list of issue data to JSON...
+
+Thu, 09/16/21, 01:49:44 PM:  Complete! 
+
+Thu, 09/16/21, 01:49:44 PM:  Success! 
+
+Thu, 09/16/21, 01:49:44 PM: 
+END OF PROGRAM RUN
+----------------------------------------------------------------------------------------------------------------------
+
+
+Thu, 09/16/21, 01:50:02 PM: 
+----------------------------------------------------------------------------------------------------------------------
+START OF PROGRAM RUN
+
+Thu, 09/16/21, 01:50:02 PM: 
+    Validating user authentification...
+
+Thu, 09/16/21, 01:50:02 PM:  Complete! 
+
+Thu, 09/16/21, 01:50:02 PM:  
+    PROGRAM START
+    -------------
+    Config used: 
+        - config file name  : ./configs/jabref/jabref_10.txt
+        - repo              : JabRef/jabref
+        - auth file         : auths/fabio_auth.txt
+        - rows              : 10
+        - issue state       : closed        
+        - pr state          : closed          
+        - diagnostics       : false          
+        - log file          : log_files/jabref/jabref_10_log.txt        
+        - issue json file   : outputs/jabref_10/json/jabref_10_issue_list.json
+        - pr JSON file      : outputs/jabref_10/json/jabref_10_pr_list.json
+        - commit JSON file  : outputs/jabref_10/json/jabref_10_commit_list.json
+        - master JSON file  : outputs/jabref_10/json/jabref_10_master_list.json
+        - "pr" CSV file     : outputs/jabref_10/jabref_10_pr_output.csv       
+        - "commit" CSV file : outputs/jabref_10/jabref_10_commit_output.csv
+        - "pr" separator    : ,
+        - "commit" separator: ,
+
+
+Thu, 09/16/21, 01:50:08 PM: 
+ Attempting program start... 
+
+Thu, 09/16/21, 01:50:38 PM: 
+    Reading collated data JSON...
+
+Thu, 09/16/21, 01:50:38 PM:  Complete! 
+
+Thu, 09/16/21, 01:50:38 PM: 
+    Writing "PR" type CSV...
+
+Thu, 09/16/21, 01:50:38 PM:  Complete! 
+
+Thu, 09/16/21, 01:50:38 PM: 
+    Writing "commit" type CSV...
+
+Thu, 09/16/21, 01:50:38 PM:  Complete! 
+
+Thu, 09/16/21, 01:50:38 PM:  Success! 
+
+Thu, 09/16/21, 01:50:38 PM: 
+END OF PROGRAM RUN
+----------------------------------------------------------------------------------------------------------------------
+

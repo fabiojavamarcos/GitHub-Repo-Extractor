@@ -1,0 +1,21 @@
+- powertoys
+- link: https://github.com/microsoft/PowerToys
+
+repo                 = microsoft/PowerToys
+auth_file            = auths/fabio_auth.txt
+rows                 = all
+issue_state          = closed
+pr_state             = closed
+diagnostics          = false
+log_file             = log_files/powertoys/powertoys_full_log.txt 
+
+issue_json_filename  = outputs/powertoys_full/json/powertoys_full_issues.json 
+pr_json_filename     = outputs/powertoys_full/json/powertoys_full_pr.json
+commit_json_filename = outputs/powertoys_full/json/powertoys_full_commit.json 
+master_json_filename = outputs/powertoys_full/json/powertoys_full_master.json
+
+pr_csv_filename      = outputs/powertoys_full/powertoys_pr_output.csv
+commit_csv_filename  = outputs/powertoys_full/powertoys_commit_output.csv  
+
+pr_separator         = \a
+commit_separator     = ,  

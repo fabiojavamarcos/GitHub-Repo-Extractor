@@ -1,0 +1,89 @@
+
+Thu, 09/16/21, 11:50:34 AM: 
+----------------------------------------------------------------------------------------------------------------------
+START OF PROGRAM RUN
+
+Thu, 09/16/21, 11:50:34 AM: 
+    Validating user authentification...
+
+Thu, 09/16/21, 11:50:35 AM:  Complete! 
+
+Thu, 09/16/21, 11:50:35 AM:  
+    PROGRAM START
+    -------------
+    Config used: 
+        - config file name  : ./configs/elastic/elastic_full.txt
+        - repo              : elastic/elasticsearch
+        - auth file         : auths/fabio_auth.txt
+        - rows              : 10
+        - issue state       : closed        
+        - pr state          : closed          
+        - diagnostics       : false          
+        - log file          : log_files/elastic/elastic_full_log.txt        
+        - issue json file   : outputs/elastic_full/json/elastic_full_issues.json
+        - pr JSON file      : outputs/elastic_full/json/elastic_full_pr.json
+        - commit JSON file  : outputs/elastic_full/json/elastic_full_commit.json
+        - master JSON file  : outputs/elastic_full/json/elastic_full_master.json
+        - "pr" CSV file     : outputs/elastic_full/elastic_pr_output.csv       
+        - "commit" CSV file : outputs/elastic_full/elastic_commit_output.csv
+        - "pr" separator    : \a
+        - "commit" separator: ,
+
+
+Thu, 09/16/21, 11:50:37 AM: 
+ Attempting program start... 
+
+Thu, 09/16/21, 11:50:38 AM: 
+    Getting paginated list of issues...
+
+Thu, 09/16/21, 11:50:38 AM:  Complete! 
+
+Thu, 09/16/21, 11:50:38 AM: 
+    Getting paginated list of pull requests...
+
+Thu, 09/16/21, 11:50:38 AM:  Complete! 
+
+Thu, 09/16/21, 11:50:38 AM: 
+    Validating row quantity config for issue data collection...
+
+Thu, 09/16/21, 11:50:38 AM:  Complete! 
+
+Thu, 09/16/21, 11:50:38 AM: 
+    Getting issue data...
+
+Thu, 09/16/21, 11:50:44 AM:  Complete! 
+
+Thu, 09/16/21, 11:50:44 AM: 
+    Writing list of issue data to JSON...
+
+Thu, 09/16/21, 11:50:44 AM:  Complete! 
+
+Thu, 09/16/21, 11:50:44 AM: 
+    Validating row quantity config for pull request data collection...
+
+Thu, 09/16/21, 11:50:54 AM: 
+    Unspecified exception:
+
+Traceback (most recent call last):
+  File "extractor.py", line 160, in main
+    exe_menu( cfg_list, session, logger )
+  File "extractor.py", line 479, in exe_menu
+    get_list_json( conf_list, session, logger, "PR", pr_paged_list )
+  File "extractor.py", line 1080, in get_list_json
+    list_tuple = get_PR_info( session, data_list, row_quant, diag_flag,
+  File "extractor.py", line 1281, in get_PR_info
+    safe_quant = check_row_quant_safety( pr_paged_list, row_quant, "V_ROW_#_PR",
+  File "extractor.py", line 252, in check_row_quant_safety
+    if str_param_quant == "all" or int( config_quant ) > paged_list.totalCount:
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/PaginatedList.py", line 149, in totalCount
+    headers, data = self.__requester.requestJsonAndCheck(
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/Requester.py", line 315, in requestJsonAndCheck
+    return self.__check(
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/Requester.py", line 340, in __check
+    raise self.__createException(status, responseHeaders, output)
+github.GithubException.GithubException: 502 {"message": "Server Error"}
+
+Thu, 09/16/21, 11:50:54 AM: 
+END OF PROGRAM RUN
+----------------------------------------------------------------------------------------------------------------------
+

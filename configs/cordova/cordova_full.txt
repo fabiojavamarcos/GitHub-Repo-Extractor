@@ -1,0 +1,21 @@
+- Gson
+- link: https://github.com/apache/cordova 
+
+repo                 = apache/cordova
+auth_file            = auths/fabio_auth.txt
+rows                 = all
+issue_state          = closed
+pr_state             = closed
+diagnostics          = false
+log_file             = log_files/cordova/cordova_full_log.txt
+
+issue_json_filename  = outputs/cordova_full/json/cordova_full_issues.json
+pr_json_filename     = outputs/cordova_full/json/cordova_full_pr.json
+commit_json_filename = outputs/cordova_full/json/cordova_full_commit.json
+master_json_filename = outputs/cordova_full/json/cordova_full_master.json
+
+pr_csv_filename      = outputs/cordova_full/cordova_pr_output.csv
+commit_csv_filename  = outputs/cordova_full/cordova_commit_output.csv
+
+pr_separator         = \a
+commit_separator     = , 

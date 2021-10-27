@@ -1,0 +1,21 @@
+- eureka config file
+- link: https://github.com/Netflix/eureka
+
+repo                 = Netflix/eureka
+auth_file            = auths/fabio_auth.txt
+rows                 = all
+issue_state          = closed
+pr_state             = closed
+diagnostics          = false
+log_file             = log_files/eureka/eureka_full_log.txt 
+
+issue_json_filename  = outputs/eureka_full/json/eureka_full_issue_list.json 
+pr_json_filename     = outputs/eureka_full/json/eureka_full_pr_list.json
+commit_json_filename = outputs/eureka_full/json/eureka_full_commit_list.json
+master_json_filename = outputs/eureka_full/json/eureka_full_master_list.json
+                       
+pr_csv_filename      = outputs/eureka_full/eureka_full_pr_output.csv
+commit_csv_filename  = outputs/eureka_full/eureka_full_commit_output.csv 
+
+pr_separator         = \a
+commit_separator     = ,  

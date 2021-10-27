@@ -1,0 +1,151 @@
+
+Wed, 09/15/21, 12:59:24 PM: 
+----------------------------------------------------------------------------------------------------------------------
+START OF PROGRAM RUN
+
+Wed, 09/15/21, 12:59:24 PM: 
+    Validating user authentification...
+
+Wed, 09/15/21, 12:59:25 PM:  Complete! 
+
+Wed, 09/15/21, 12:59:25 PM:  
+    PROGRAM START
+    -------------
+    Config used: 
+        - config file name  : ./configs/cordova/cordova_full.txt
+        - repo              : apache/cordova
+        - auth file         : auths/fabio_auth.txt
+        - rows              : all
+        - issue state       : closed        
+        - pr state          : closed          
+        - diagnostics       : false          
+        - log file          : log_files/cordova/cordova_full_log.txt        
+        - issue json file   : outputs/cordova_full/json/cordova_full_issues.json
+        - pr JSON file      : outputs/cordova_full/json/cordova_full_pr.json
+        - commit JSON file  : outputs/cordova_full/json/cordova_full_commit.json
+        - master JSON file  : outputs/cordova_full/json/cordova_full_master.json
+        - "pr" CSV file     : outputs/cordova_full/cordova_pr_output.csv       
+        - "commit" CSV file : outputs/cordova_full/cordova_commit_output.csv
+        - "pr" separator    : \a
+        - "commit" separator: ,
+
+
+Wed, 09/15/21, 12:59:41 PM: 
+ Attempting program start... 
+
+Wed, 09/15/21, 12:59:41 PM: 
+    Getting paginated list of issues...
+
+Wed, 09/15/21, 12:59:41 PM:  Complete! 
+
+Wed, 09/15/21, 12:59:41 PM: 
+    Getting paginated list of pull requests...
+
+Wed, 09/15/21, 12:59:41 PM:  Complete! 
+
+Wed, 09/15/21, 12:59:41 PM: 
+    Validating row quantity config for issue data collection...
+
+Wed, 09/15/21, 12:59:41 PM:  Complete! 
+
+Wed, 09/15/21, 12:59:41 PM: 
+    Getting issue data...
+
+Wed, 09/15/21, 01:01:18 PM:  Complete! 
+
+Wed, 09/15/21, 01:01:18 PM: 
+    Writing list of issue data to JSON...
+
+Wed, 09/15/21, 01:01:19 PM:  Complete! 
+
+Wed, 09/15/21, 01:01:19 PM: 
+    Validating row quantity config for pull request data collection...
+
+Wed, 09/15/21, 01:01:19 PM:  Complete! 
+
+Wed, 09/15/21, 01:01:19 PM: 
+    Getting pull request data...
+
+Wed, 09/15/21, 01:01:29 PM:  Complete! 
+
+Wed, 09/15/21, 01:01:29 PM: 
+    Writing list of PR data to JSON...
+
+Wed, 09/15/21, 01:01:29 PM:  Complete! 
+
+Wed, 09/15/21, 01:01:29 PM: 
+[Diagnostics]:
+
+    Non-merged pull requests:
+        20
+        21
+        279
+
+Wed, 09/15/21, 01:01:29 PM: 
+    filtering commits...
+
+Wed, 09/15/21, 01:01:38 PM:  Complete! 
+
+Wed, 09/15/21, 01:01:38 PM: 
+    Getting commit data...
+
+Wed, 09/15/21, 01:01:38 PM:  Complete! 
+
+Wed, 09/15/21, 01:01:38 PM: 
+    Writing list of commit data to JSON...
+
+Wed, 09/15/21, 01:01:38 PM:  Complete! 
+
+Wed, 09/15/21, 01:01:38 PM: 
+[Diagnostics]:
+
+    Pull requsts with no commits:
+
+    Commits with no changed files:
+
+Wed, 09/15/21, 01:01:38 PM: 
+    Reading issue data JSON...
+
+Wed, 09/15/21, 01:01:38 PM:  Complete! 
+
+Wed, 09/15/21, 01:01:38 PM: 
+    Reading pull request data JSON...
+
+Wed, 09/15/21, 01:01:38 PM:  Complete! 
+
+Wed, 09/15/21, 01:01:38 PM: 
+    Reading commit data JSON...
+
+Wed, 09/15/21, 01:01:38 PM:  Complete! 
+
+Wed, 09/15/21, 01:01:38 PM: 
+    collating lists...
+
+Wed, 09/15/21, 01:01:38 PM:  Complete! 
+
+Wed, 09/15/21, 01:01:38 PM: 
+    Writing master list of data to JSON...
+
+Wed, 09/15/21, 01:01:38 PM:  Complete! 
+
+Wed, 09/15/21, 01:01:38 PM: 
+    Reading collated data JSON...
+
+Wed, 09/15/21, 01:01:38 PM:  Complete! 
+
+Wed, 09/15/21, 01:01:38 PM: 
+    Writing "PR" type CSV...
+
+Wed, 09/15/21, 01:01:38 PM:  Complete! 
+
+Wed, 09/15/21, 01:01:38 PM: 
+    Writing "commit" type CSV...
+
+Wed, 09/15/21, 01:01:38 PM:  Complete! 
+
+Wed, 09/15/21, 01:01:38 PM:  Success! 
+
+Wed, 09/15/21, 01:01:38 PM: 
+END OF PROGRAM RUN
+----------------------------------------------------------------------------------------------------------------------
+

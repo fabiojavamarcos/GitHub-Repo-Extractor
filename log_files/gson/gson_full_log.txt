@@ -1,0 +1,443 @@
+
+Tue, 09/14/21, 11:22:23 AM: 
+----------------------------------------------------------------------------------------------------------------------
+START OF PROGRAM RUN
+
+Tue, 09/14/21, 11:22:23 AM: 
+    Validating user authentification...
+
+Tue, 09/14/21, 11:22:24 AM: 
+    Non-fatal: 
+        Invalid personal access token!
+        Please see https://github.com/settings/tokens 
+        to create a token with "repo" permissions!
+        Continuing without authentification...
+Traceback (most recent call last):
+  File "extractor.py", line 1849, in verify_auth
+    session.get_user().name
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/AuthenticatedUser.py", line 238, in name
+    self._completeIfNotSet(self._name)
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/GithubObject.py", line 294, in _completeIfNotSet
+    self._completeIfNeeded()
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/GithubObject.py", line 298, in _completeIfNeeded
+    self.__complete()
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/GithubObject.py", line 305, in __complete
+    headers, data = self._requester.requestJsonAndCheck("GET", self._url.value)
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/Requester.py", line 315, in requestJsonAndCheck
+    return self.__check(
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/Requester.py", line 340, in __check
+    raise self.__createException(status, responseHeaders, output)
+github.GithubException.BadCredentialsException: 401 {"message": "Bad credentials", "documentation_url": "https://docs.github.com/rest"}
+
+Tue, 09/14/21, 11:22:24 AM:  Complete! 
+
+Tue, 09/14/21, 11:22:24 AM:  
+    PROGRAM START
+    -------------
+    Config used: 
+        - config file name  : ./configs/gson/gson_full.txt
+        - repo              : google/gson
+        - auth file         : auths/fabio_auth.txt
+        - rows              : all
+        - issue state       : closed        
+        - pr state          : closed          
+        - diagnostics       : false          
+        - log file          : log_files/gson/gson_full_log.txt        
+        - issue json file   : outputs/gson_full/json/gson_full_issues.json
+        - pr JSON file      : outputs/gson_full/json/gson_full_pr.json
+        - commit JSON file  : outputs/gson_full/json/gson_full_commit.json
+        - master JSON file  : outputs/gson_full/json/gson_full_master.json
+        - "pr" CSV file     : outputs/gson_full/gson_pr_output.csv       
+        - "commit" CSV file : outputs/gson_full/gson_commit_output.csv
+        - "pr" separator    : \a
+        - "commit" separator: ,
+
+
+Tue, 09/14/21, 11:26:50 AM: 
+    Unspecified exception:
+
+Traceback (most recent call last):
+  File "extractor.py", line 160, in main
+    exe_menu( cfg_list, session, logger )
+  File "extractor.py", line 461, in exe_menu
+    op_choice = input( PROG_INTRO )
+KeyboardInterrupt
+
+Tue, 09/14/21, 11:26:50 AM: 
+END OF PROGRAM RUN
+----------------------------------------------------------------------------------------------------------------------
+
+
+Tue, 09/14/21, 11:27:31 AM: 
+----------------------------------------------------------------------------------------------------------------------
+START OF PROGRAM RUN
+
+Tue, 09/14/21, 11:27:31 AM: 
+    Validating user authentification...
+
+Tue, 09/14/21, 11:27:32 AM: 
+    Non-fatal: 
+        Invalid personal access token!
+        Please see https://github.com/settings/tokens 
+        to create a token with "repo" permissions!
+        Continuing without authentification...
+Traceback (most recent call last):
+  File "extractor.py", line 1849, in verify_auth
+    session.get_user().name
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/AuthenticatedUser.py", line 238, in name
+    self._completeIfNotSet(self._name)
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/GithubObject.py", line 294, in _completeIfNotSet
+    self._completeIfNeeded()
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/GithubObject.py", line 298, in _completeIfNeeded
+    self.__complete()
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/GithubObject.py", line 305, in __complete
+    headers, data = self._requester.requestJsonAndCheck("GET", self._url.value)
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/Requester.py", line 315, in requestJsonAndCheck
+    return self.__check(
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/Requester.py", line 340, in __check
+    raise self.__createException(status, responseHeaders, output)
+github.GithubException.BadCredentialsException: 401 {"message": "Bad credentials", "documentation_url": "https://docs.github.com/rest"}
+
+Tue, 09/14/21, 11:27:32 AM:  Complete! 
+
+Tue, 09/14/21, 11:27:32 AM:  
+    PROGRAM START
+    -------------
+    Config used: 
+        - config file name  : ./configs/gson/gson_full.txt
+        - repo              : google/gson
+        - auth file         : auths/fabio_auth.txt
+        - rows              : all
+        - issue state       : closed        
+        - pr state          : closed          
+        - diagnostics       : false          
+        - log file          : log_files/gson/gson_full_log.txt        
+        - issue json file   : outputs/gson_full/json/gson_full_issues.json
+        - pr JSON file      : outputs/gson_full/json/gson_full_pr.json
+        - commit JSON file  : outputs/gson_full/json/gson_full_commit.json
+        - master JSON file  : outputs/gson_full/json/gson_full_master.json
+        - "pr" CSV file     : outputs/gson_full/gson_pr_output.csv       
+        - "commit" CSV file : outputs/gson_full/gson_commit_output.csv
+        - "pr" separator    : \a
+        - "commit" separator: ,
+
+
+Tue, 09/14/21, 11:44:44 AM: 
+    Unspecified exception:
+
+Traceback (most recent call last):
+  File "extractor.py", line 160, in main
+    exe_menu( cfg_list, session, logger )
+  File "extractor.py", line 461, in exe_menu
+    op_choice = input( PROG_INTRO )
+KeyboardInterrupt
+
+Tue, 09/14/21, 11:44:44 AM: 
+END OF PROGRAM RUN
+----------------------------------------------------------------------------------------------------------------------
+
+
+Tue, 09/14/21, 11:45:57 AM: 
+----------------------------------------------------------------------------------------------------------------------
+START OF PROGRAM RUN
+
+Tue, 09/14/21, 11:45:57 AM: 
+    Validating user authentification...
+
+Tue, 09/14/21, 11:45:57 AM:  Complete! 
+
+Tue, 09/14/21, 11:45:57 AM:  
+    PROGRAM START
+    -------------
+    Config used: 
+        - config file name  : ./configs/gson/gson_full.txt
+        - repo              : google/gson
+        - auth file         : auths/fabio_auth.txt
+        - rows              : all
+        - issue state       : closed        
+        - pr state          : closed          
+        - diagnostics       : false          
+        - log file          : log_files/gson/gson_full_log.txt        
+        - issue json file   : outputs/gson_full/json/gson_full_issues.json
+        - pr JSON file      : outputs/gson_full/json/gson_full_pr.json
+        - commit JSON file  : outputs/gson_full/json/gson_full_commit.json
+        - master JSON file  : outputs/gson_full/json/gson_full_master.json
+        - "pr" CSV file     : outputs/gson_full/gson_pr_output.csv       
+        - "commit" CSV file : outputs/gson_full/gson_commit_output.csv
+        - "pr" separator    : \a
+        - "commit" separator: ,
+
+
+Tue, 09/14/21, 11:55:16 AM: 
+ Attempting program start... 
+
+Tue, 09/14/21, 11:55:16 AM: 
+    Getting paginated list of issues...
+
+Tue, 09/14/21, 11:55:16 AM:  Complete! 
+
+Tue, 09/14/21, 11:55:16 AM: 
+    Getting paginated list of pull requests...
+
+Tue, 09/14/21, 11:55:16 AM:  Complete! 
+
+Tue, 09/14/21, 11:55:16 AM: 
+    Validating row quantity config for issue data collection...
+
+Tue, 09/14/21, 11:55:16 AM:  Complete! 
+
+Tue, 09/14/21, 11:55:16 AM: 
+    Getting issue data...
+
+Tue, 09/14/21, 12:06:30 PM:  Complete! 
+
+Tue, 09/14/21, 12:06:30 PM: 
+    Writing list of issue data to JSON...
+
+Tue, 09/14/21, 12:06:30 PM:  Complete! 
+
+Tue, 09/14/21, 12:06:30 PM: 
+    Validating row quantity config for pull request data collection...
+
+Tue, 09/14/21, 12:06:30 PM:  Complete! 
+
+Tue, 09/14/21, 12:06:30 PM: 
+    Getting pull request data...
+
+Tue, 09/14/21, 12:09:49 PM:  Complete! 
+
+Tue, 09/14/21, 12:09:49 PM: 
+    Writing list of PR data to JSON...
+
+Tue, 09/14/21, 12:09:49 PM:  Complete! 
+
+Tue, 09/14/21, 12:09:49 PM: 
+[Diagnostics]:
+
+    Non-merged pull requests:
+        636
+        637
+        638
+        643
+        645
+        649
+        656
+        660
+        661
+        663
+        679
+        683
+        697
+        716
+        717
+        728
+        734
+        755
+        757
+        775
+        789
+        795
+        810
+        813
+        821
+        827
+        833
+        838
+        844
+        846
+        850
+        851
+        854
+        862
+        879
+        883
+        890
+        893
+        896
+        897
+        901
+        905
+        916
+        937
+        938
+        945
+        954
+        962
+        963
+        989
+        1004
+        1017
+        1018
+        1019
+        1025
+        1027
+        1039
+        1043
+        1050
+        1051
+        1056
+        1076
+        1092
+        1099
+        1116
+        1121
+        1130
+        1198
+        1222
+        1237
+        1239
+        1255
+        1263
+        1264
+        1265
+        1266
+        1280
+        1322
+        1332
+        1337
+        1349
+        1375
+        1389
+        1393
+        1396
+        1401
+        1411
+        1419
+        1422
+        1428
+        1430
+        1442
+        1468
+        1471
+        1479
+        1487
+        1488
+        1490
+        1492
+        1494
+        1496
+        1497
+        1498
+        1499
+        1513
+        1530
+        1534
+        1577
+        1594
+        1610
+        1611
+        1614
+        1615
+        1618
+        1620
+        1656
+        1668
+        1672
+        1673
+        1688
+        1689
+        1762
+        1767
+        1803
+        1809
+        1813
+        1819
+        1820
+        1824
+        1838
+        1878
+        1882
+        1915
+        1960
+        1962
+
+Tue, 09/14/21, 12:09:49 PM: 
+    filtering commits...
+
+Tue, 09/14/21, 12:11:55 PM: 
+    Rate Limit imposed. Sleeping...
+Traceback (most recent call last):
+  File "extractor.py", line 609, in filter_commits
+    commit_files        = commit_of_interest.files
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/Commit.py", line 91, in files
+    self._completeIfNotSet(self._files)
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/GithubObject.py", line 294, in _completeIfNotSet
+    self._completeIfNeeded()
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/GithubObject.py", line 298, in _completeIfNeeded
+    self.__complete()
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/GithubObject.py", line 305, in __complete
+    headers, data = self._requester.requestJsonAndCheck("GET", self._url.value)
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/Requester.py", line 315, in requestJsonAndCheck
+    return self.__check(
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/Requester.py", line 340, in __check
+    raise self.__createException(status, responseHeaders, output)
+github.GithubException.RateLimitExceededException: 403 {"message": "API rate limit exceeded for user ID 34105280.", "documentation_url": "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+Tue, 09/14/21, 12:46:01 PM: 
+    filtering commits...
+
+Tue, 09/14/21, 12:46:29 PM:  Complete! 
+
+Tue, 09/14/21, 12:46:29 PM: 
+    Getting commit data...
+
+Tue, 09/14/21, 12:46:29 PM:  Complete! 
+
+Tue, 09/14/21, 12:46:29 PM: 
+    Writing list of commit data to JSON...
+
+Tue, 09/14/21, 12:46:29 PM:  Complete! 
+
+Tue, 09/14/21, 12:46:29 PM: 
+[Diagnostics]:
+
+    Pull requsts with no commits:
+
+    Commits with no changed files:
+
+Tue, 09/14/21, 12:46:29 PM: 
+    Reading issue data JSON...
+
+Tue, 09/14/21, 12:46:29 PM:  Complete! 
+
+Tue, 09/14/21, 12:46:29 PM: 
+    Reading pull request data JSON...
+
+Tue, 09/14/21, 12:46:29 PM:  Complete! 
+
+Tue, 09/14/21, 12:46:29 PM: 
+    Reading commit data JSON...
+
+Tue, 09/14/21, 12:46:29 PM:  Complete! 
+
+Tue, 09/14/21, 12:46:29 PM: 
+    collating lists...
+
+Tue, 09/14/21, 12:46:29 PM:  Complete! 
+
+Tue, 09/14/21, 12:46:29 PM: 
+    Writing master list of data to JSON...
+
+Tue, 09/14/21, 12:46:29 PM:  Complete! 
+
+Tue, 09/14/21, 12:46:29 PM: 
+    Reading collated data JSON...
+
+Tue, 09/14/21, 12:46:29 PM:  Complete! 
+
+Tue, 09/14/21, 12:46:29 PM: 
+    Writing "PR" type CSV...
+
+Tue, 09/14/21, 12:46:29 PM:  Complete! 
+
+Tue, 09/14/21, 12:46:29 PM: 
+    Writing "commit" type CSV...
+
+Tue, 09/14/21, 12:46:29 PM:  Complete! 
+
+Tue, 09/14/21, 12:46:30 PM:  Success! 
+
+Tue, 09/14/21, 12:46:30 PM: 
+END OF PROGRAM RUN
+----------------------------------------------------------------------------------------------------------------------
+

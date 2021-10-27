@@ -1,0 +1,490 @@
+
+Sat, 09/25/21, 05:38:37 AM: 
+----------------------------------------------------------------------------------------------------------------------
+START OF PROGRAM RUN
+
+Sat, 09/25/21, 05:38:37 AM: 
+    Validating user authentification...
+
+Sat, 09/25/21, 05:38:38 AM:  Complete! 
+
+Sat, 09/25/21, 05:38:38 AM:  
+    PROGRAM START
+    -------------
+    Config used: 
+        - config file name  : ./configs/audacity/audacity_full.txt
+        - repo              : audacity/audacity
+        - auth file         : auths/fabio_auth.txt
+        - rows              : all
+        - issue state       : closed        
+        - pr state          : closed          
+        - diagnostics       : false          
+        - log file          : log_files/audacity/audacity_full_log.txt        
+        - issue json file   : outputs/audacity_full/json/audacity_full_issues.json
+        - pr JSON file      : outputs/audacity_full/json/audacity_full_pr.json
+        - commit JSON file  : outputs/audacity_full/json/audacity_full_commit.json
+        - master JSON file  : outputs/audacity_full/json/audacity_full_master.json
+        - "pr" CSV file     : outputs/audacity_full/audacity_pr_output.csv       
+        - "commit" CSV file : outputs/audacity_full/audacity_commit_output.csv
+        - "pr" separator    : \a
+        - "commit" separator: ,
+
+
+Sat, 09/25/21, 05:38:42 AM: 
+ Attempting program start... 
+
+Sat, 09/25/21, 05:38:42 AM: 
+    Getting paginated list of issues...
+
+Sat, 09/25/21, 05:38:42 AM:  Complete! 
+
+Sat, 09/25/21, 05:38:42 AM: 
+    Getting paginated list of pull requests...
+
+Sat, 09/25/21, 05:38:42 AM:  Complete! 
+
+Sat, 09/25/21, 05:38:42 AM: 
+    Validating row quantity config for issue data collection...
+
+Sat, 09/25/21, 05:38:43 AM:  Complete! 
+
+Sat, 09/25/21, 05:38:43 AM: 
+    Getting issue data...
+
+Sat, 09/25/21, 05:47:12 AM:  Complete! 
+
+Sat, 09/25/21, 05:47:12 AM: 
+    Writing list of issue data to JSON...
+
+Sat, 09/25/21, 05:47:12 AM:  Complete! 
+
+Sat, 09/25/21, 05:47:12 AM: 
+    Validating row quantity config for pull request data collection...
+
+Sat, 09/25/21, 05:47:12 AM:  Complete! 
+
+Sat, 09/25/21, 05:47:12 AM: 
+    Getting pull request data...
+
+Sat, 09/25/21, 05:53:48 AM:  Complete! 
+
+Sat, 09/25/21, 05:53:48 AM: 
+    Writing list of PR data to JSON...
+
+Sat, 09/25/21, 05:53:48 AM:  Complete! 
+
+Sat, 09/25/21, 05:53:48 AM: 
+[Diagnostics]:
+
+    Non-merged pull requests:
+        9
+        10
+        11
+        12
+        13
+        16
+        18
+        24
+        26
+        29
+        30
+        31
+        38
+        46
+        49
+        51
+        52
+        53
+        54
+        57
+        60
+        70
+        72
+        75
+        81
+        88
+        102
+        103
+        104
+        106
+        107
+        108
+        109
+        111
+        112
+        113
+        114
+        115
+        119
+        120
+        121
+        123
+        124
+        125
+        127
+        128
+        129
+        130
+        131
+        134
+        135
+        136
+        137
+        142
+        144
+        145
+        147
+        149
+        151
+        152
+        153
+        155
+        161
+        162
+        163
+        164
+        166
+        168
+        169
+        170
+        171
+        172
+        174
+        177
+        179
+        181
+        182
+        183
+        186
+        187
+        188
+        189
+        190
+        192
+        194
+        195
+        196
+        197
+        198
+        201
+        204
+        205
+        207
+        209
+        210
+        212
+        213
+        214
+        216
+        217
+        218
+        219
+        222
+        223
+        224
+        226
+        228
+        231
+        232
+        233
+        234
+        235
+        236
+        237
+        238
+        239
+        240
+        241
+        242
+        243
+        244
+        247
+        248
+        250
+        253
+        255
+        258
+        260
+        261
+        262
+        263
+        268
+        269
+        272
+        274
+        276
+        277
+        278
+        279
+        281
+        282
+        288
+        291
+        292
+        293
+        295
+        297
+        299
+        300
+        301
+        303
+        304
+        305
+        306
+        307
+        308
+        309
+        310
+        312
+        313
+        314
+        315
+        317
+        320
+        321
+        323
+        325
+        326
+        327
+        331
+        335
+        336
+        338
+        341
+        344
+        348
+        352
+        353
+        354
+        359
+        361
+        362
+        363
+        366
+        367
+        370
+        371
+        375
+        377
+        378
+        379
+        383
+        384
+        385
+        386
+        388
+        389
+        391
+        392
+        399
+        403
+        408
+        414
+        415
+        423
+        434
+        437
+        441
+        446
+        449
+        451
+        457
+        461
+        485
+        488
+        489
+        491
+        492
+        493
+        498
+        502
+        506
+        516
+        545
+        546
+        547
+        558
+        560
+        567
+        582
+        590
+        591
+        592
+        602
+        608
+        609
+        618
+        632
+        645
+        647
+        666
+        668
+        669
+        676
+        694
+        696
+        717
+        726
+        730
+        738
+        739
+        745
+        748
+        753
+        755
+        759
+        761
+        764
+        768
+        772
+        773
+        779
+        783
+        785
+        791
+        793
+        794
+        803
+        813
+        814
+        826
+        828
+        835
+        860
+        862
+        863
+        865
+        870
+        942
+        946
+        962
+        972
+        973
+        977
+        980
+        983
+        1007
+        1026
+        1029
+        1040
+        1041
+        1049
+        1051
+        1053
+        1203
+        1216
+        1220
+        1221
+        1283
+        1284
+        1286
+        1290
+        1299
+        1301
+        1302
+        1311
+        1316
+        1317
+        1319
+        1327
+        1343
+        1372
+        1387
+        1423
+        1432
+        1635
+        1667
+        1690
+
+Sat, 09/25/21, 05:53:48 AM: 
+    filtering commits...
+
+Sat, 09/25/21, 05:55:34 AM: 
+    Rate Limit imposed. Sleeping...
+Traceback (most recent call last):
+  File "extractor.py", line 609, in filter_commits
+    commit_files        = commit_of_interest.files
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/Commit.py", line 91, in files
+    self._completeIfNotSet(self._files)
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/GithubObject.py", line 294, in _completeIfNotSet
+    self._completeIfNeeded()
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/GithubObject.py", line 298, in _completeIfNeeded
+    self.__complete()
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/GithubObject.py", line 305, in __complete
+    headers, data = self._requester.requestJsonAndCheck("GET", self._url.value)
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/Requester.py", line 315, in requestJsonAndCheck
+    return self.__check(
+  File "/opt/anaconda3/lib/python3.8/site-packages/github/Requester.py", line 340, in __check
+    raise self.__createException(status, responseHeaders, output)
+github.GithubException.RateLimitExceededException: 403 {"message": "API rate limit exceeded for user ID 34105280.", "documentation_url": "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+Sat, 09/25/21, 06:38:46 AM: 
+    filtering commits...
+
+Sat, 09/25/21, 06:41:37 AM:  Complete! 
+
+Sat, 09/25/21, 06:41:37 AM: 
+    Getting commit data...
+
+Sat, 09/25/21, 06:41:37 AM:  Complete! 
+
+Sat, 09/25/21, 06:41:37 AM: 
+    Writing list of commit data to JSON...
+
+Sat, 09/25/21, 06:41:37 AM:  Complete! 
+
+Sat, 09/25/21, 06:41:37 AM: 
+[Diagnostics]:
+
+    Pull requsts with no commits:
+
+    Commits with no changed files:
+        25
+        741
+
+Sat, 09/25/21, 06:41:37 AM: 
+    Reading issue data JSON...
+
+Sat, 09/25/21, 06:41:37 AM:  Complete! 
+
+Sat, 09/25/21, 06:41:37 AM: 
+    Reading pull request data JSON...
+
+Sat, 09/25/21, 06:41:37 AM:  Complete! 
+
+Sat, 09/25/21, 06:41:37 AM: 
+    Reading commit data JSON...
+
+Sat, 09/25/21, 06:41:37 AM:  Complete! 
+
+Sat, 09/25/21, 06:41:37 AM: 
+    collating lists...
+
+Sat, 09/25/21, 06:41:37 AM:  Complete! 
+
+Sat, 09/25/21, 06:41:37 AM: 
+    Writing master list of data to JSON...
+
+Sat, 09/25/21, 06:41:37 AM:  Complete! 
+
+Sat, 09/25/21, 06:41:37 AM: 
+    Reading collated data JSON...
+
+Sat, 09/25/21, 06:41:37 AM:  Complete! 
+
+Sat, 09/25/21, 06:41:37 AM: 
+    Writing "PR" type CSV...
+
+Sat, 09/25/21, 06:41:37 AM:  Complete! 
+
+Sat, 09/25/21, 06:41:37 AM: 
+    Writing "commit" type CSV...
+
+Sat, 09/25/21, 06:41:37 AM:  Complete! 
+
+Sat, 09/25/21, 06:41:38 AM:  Success! 
+
+Sat, 09/25/21, 06:41:38 AM: 
+END OF PROGRAM RUN
+----------------------------------------------------------------------------------------------------------------------
+
